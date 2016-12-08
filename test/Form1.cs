@@ -33,15 +33,15 @@ namespace test
         {
             new Settings(); //ustawia domyślne ustawienia gry na rozpoczęciu
 
-            //labelGameOverText.Visible = false;
+            
             snake.Clear();
-            Circle snakeHead = new Circle(5, 5); //głowa naszego węża, wartosci do przetestowania
+            Circle snakeHead = new Circle(5, 5); 
             snake.Add(snakeHead);
             FeedSpawn(); //metoda umożliwiająca pojawienie się pożywienie w losowych punktach planszy na rozpoczęciu gry
             labelScore.Text = Settings.score.ToString(); //ustawia punktację na domyślną, czyli zero
 
 
-
+            //
         }
 
         private void FeedSpawn()
@@ -105,8 +105,7 @@ namespace test
             else
             {
                 string gameOverText = "Przegrałeś"; //komunikat do rozwiniecia pozniej
-                //labelGameOverText.Text = gameOverText;
-                //labelGameOverText.Visible = true;
+               
 
             }
         }
